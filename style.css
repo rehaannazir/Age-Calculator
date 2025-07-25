@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    padding: 1.5em;
+}
+
+.heading img{
+    max-width: 50px;
+}
+
+.heading_img{
+    max-width: 80%;
+    border-radius: 50%;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(192, 192, 192, 0.3); 
+    overflow: hidden;
+
+}
+
+.heading h1{
+    font-size: 3vmax;
+    padding-top: 1em
+}
+
+.heading p{
+    margin: 1em;
+    font-size: 2.5vmin;
+    word-spacing: 0.2vmax;
+
+}
+
+.calculator-card{
+    width: 50vmax;
+    padding: 1em;
+    color: #333;
+    background-color: aliceblue;
+    border-radius: 2em;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.8);
+}
+
+
+.calculator-card .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height:3em;
+}
+
+.calculator-card .input img{
+    max-width: 0.7em;
+    padding-top: 0.8em;
+}
+.calculator-card .input input{
+    padding: 1em;
+    border:1px solid rgba(192, 192, 192, 0.905);
+    border-radius: 1em;
+    font-size: 1.3em;
+}
+
+.calculator-card .input input:hover{
+    background-color: rgba(117, 145, 243, 0.3);
+}
+
+.back_shade{
+    margin-left: 4%;
+    text-align: center;
+    padding: 4em;
+    line-height: 2em;
+}
+
+
+
+.back_shade img{
+    max-width: 5em;
+}
+
+.ending{
+    margin-top: 2em;
+}
+
+.result{
+    padding: 1.8em;
+   
+}
+
+.result .age_para{
+    font-size: 1.3em;
+    color: #6c36c9;
+    word-spacing: 0.1em;
+}
+
+.result .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.result .container .box{
+    width: 12vmax;
+    height: 9vmax;
+    display: flex;
+    margin: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:2em;
+    animation: float 0.8s ease-in 0s 1 normal;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0);    }
+    50%  { transform: translateY(-30px);}
+    100% { transform: translateY(0);    }
+}
+
+.result .container .box:hover{
+    box-shadow: 0 1px 6px rgba(80, 78, 78, 0.3);
+}
+
+.result .container #year_card{
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border: 1px solid #93c5fd;
+    color: #1d4ed8;
+}
+.result .container #month_card{
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);   
+    border: 1px solid #c4b5fd;
+    color: #7c3aed;
+}
+.result .container #day_card{
+    background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);   
+    border: 1px solid #81d4fa;
+    color: #0284c7;
+}
+
+.result .summary p{
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+.result .summary .years{
+    color: #0b3fcf;
+}
+.result .summary .months{
+    color: #6a20ea;
+}
+.result .summary .days{
+    color: #016ea5;    
+}
+
+button{
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    color: aliceblue;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 1em;
+    font-weight: 1em;
+    position: relative;
+    bottom: -9px;
+    border-radius: 0.5em;
+}
+button:hover{
+    box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    background: linear-gradient(135deg, #2648dd 0%, #62388d 100%);
+    cursor: pointer;
+}
+
+#error{
+    max-width: 100%;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.hide{
+    display: none;
+}

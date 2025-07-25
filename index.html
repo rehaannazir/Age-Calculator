@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type= "image/x-icon" href="/images/icon.png">
+    <title>Age Calculator</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <header>
+        <div class= "heading">
+            <div class = "heading_img">
+                <img src="images/white_icon.png">
+            </div> 
+            <h1>Age Calculator</h1>
+            <p>Discover your exact age in years, months & days</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculator-card">
+
+            <div class ="input">
+            <label>Enter you date of birth</label>
+            <input type="date" id="birth_date" placeholder="mm/dd/yyyy">
+            <img src="images/record-button.png">
+            </div>
+            
+            <div class="back_shade ">
+                <img src="images/calendar.png">
+                <p>Select your date of birth above to see your exact age</p>
+                <button id = "calculate">Calculate</button>
+            </div>
+       
+
+            <div class="result hide">
+                <p class="age_para">&#10003;Your Age</p>
+                <div class="container">
+                    <div class="box" id="year_card"><h2 id="year_card_num"></h2><p>YEARS</p></div>
+                    <div class="box" id="month_card"><h2 id="month_card_num"></h2><p>MONTHS</p></div>
+                    <div class="box" id="day_card"><h2 id="day_card_num"></h2><p>DAYS</p></div>
+                </div>
+                <div class="summary">
+                    <p>&#10561; Summary</p>
+                    <p>You are 
+                        <span class="years"><b id = "y">0 years</b></span>,
+                        <span class="months"><b id = "m">0 months</b></span>, and
+                        <span class="days"><b id = "d">0 days</b></span> old
+                    </p>
+                </div>
+                <button id="another_page"><b>Calculate Another Age</b></button>
+            </div>
+
+            <div id="error" class="hide">
+                <h2 id = "msg"></h2>
+                <button id="retry">Retry</button>
+            </div>
+
+            </div>
+        
+    </main>
+    
+    <footer>
+        <div class = "ending">
+            <p>Your age is calculated based on the current date</p>
+        </div>
+    </footer>
+
+    <script src="main.js">
+
+    </script>
+</body>
+</html>
